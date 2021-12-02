@@ -1,15 +1,8 @@
 import PropTypes from 'prop-types';
-import s from './social-profile.module.css';
+import s from './SocialProfile.module.css';
 
-export default function Profile({
-  avatar,
-  username,
-  tag,
-  location,
-  followers,
-  views,
-  likes,
-}) {
+export default function Profile(props) {
+  const { avatar, username, tag, location, followers, views, likes } = props;
   return (
     <div className={s.container}>
       <div className={s.description}>
